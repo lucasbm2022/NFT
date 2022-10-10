@@ -1,0 +1,148 @@
+body{
+  background-color: #0D1A2D;
+  margin: 0;
+  padding: 0;
+}
+.corpo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 17px;
+}
+.card{
+  background-color: #15273F;
+  border-radius: 10px;
+  width: 290px;
+  height: 510px;
+}
+.img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card-img{
+  width: 260px;
+  margin: 10px;  
+  border-radius: 10px;
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  -ms-zoom-animation: 300px;
+  perspective: 300px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;  
+  -webkit-animation: fade 2s 0s 1, infinite alternate; /*Google Chrome e Safari*/
+  -moz-animation: fade 2s 0s 1, infinite alternate; /*Mozila*/
+  -ms-animation: fade 2s 0s 1, infinite alternate; /*Internet Explorer*/
+  -o-animation: fade 2s 0s 1, infinite alternate; /*Opera*/
+  animation: fade 2s 0s 1, infinite alternate;
+}
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.card-img:hover{
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+h2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: start;
+  margin-left: 9px;
+  margin-bottom: 2px;
+  color: hsl(0, 0%, 100%);
+}
+.fa-ethereum{
+  color: hsl(178, 100%, 50%);
+}
+.fa-clock{
+  color: hsl(215, 51%, 70%);
+}
+.card-info > .p1{
+  color: hsl(178, 100%, 50%);
+  font-size: 17px;
+}
+.card-info > .p2{
+  color: hsl(215, 51%, 70%);
+  font-size: 17px;
+}
+.card-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 9px;
+  color: hsl(215, 51%, 70%);
+  
+}
+.card-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card-body > hr{
+  border-color: hsl(215, 22%, 38%);
+  margin: 12px;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footer > .text-footer{
+  display: flex;
+  flex-direction: row;  
+  letter-spacing: 1px;
+  font-size: 17px;
+  text-align: top;
+}
+.p3{
+  margin-right: 6px;
+  color: hsl(215, 51%, 70%);
+}
+.p4{
+  color: hsl(0, 0%, 100%);
+}
+a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+a:hover{
+  color: hsl(178, 100%, 50%);
+  text-decoration: underline;
+}
+.perfil{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-left: 9px;
+  border-color: hsl(0, 0%, 100%);
+  border-style: solid;
+  border-width: 2px;
+}
+@media only screen and (max-device-width: 1440px) {
+ .corpo { 
+  width: 100%; 
+} 
+}
+@media only screen and (min-device-width: 375px) {
+  .corpo{
+    width: 100%;
+  }
+}
